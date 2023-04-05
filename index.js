@@ -12,7 +12,7 @@ program
             if (dirname, keyword) {
                 fs.readFile(dirname, (err, data) => {
                     if (err) {
-                        console.log(err)
+                        console.log("Please enter valid file directory")
                     } else {
                         if (!data.includes(keyword)){
                             console.log('No line contains this keyword')
@@ -25,8 +25,6 @@ program
                         }
                     }
                 })
-            } else {
-                console.log(err)
             }
         
     })
